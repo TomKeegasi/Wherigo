@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Urwigo.exe" version="1.21.0.143" publicKeyToken="a9a1b0751ac6516a" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="Images\Urwigo.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Urwigo" version="1.21.5528.18461" language="neutral" processorArchitecture="x86" />
+    <commandLine file="Urwigo.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Core" version="3.5.0.0" publicKeyToken="b77a5c561934e089" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="WindowsBase" version="3.0.0.0" publicKeyToken="31bf3856ad364e35" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Antlr3.Runtime.dll" size="117760">
+      <assemblyIdentity name="Antlr3.Runtime" version="3.1.3.42154" publicKeyToken="3A9CAB8F8D22BFB7" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>+OQUfZto3ZkXJT8SZrXEJ2RAEEU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AvalonDock.dll" size="278528">
+      <assemblyIdentity name="AvalonDock" version="1.2.2691.0" publicKeyToken="85A1E0ADA7EC13E4" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>oZcnHlkDrHqedIJPIBkfR4i4HxE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GeoFramework.dll" size="323584">
+      <assemblyIdentity name="GeoFramework" version="1.4.3600.3" publicKeyToken="3ED3CDF4FDDA3400" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>ZwwR+p/9sIeIU9Cgp1Gy7pzbGDA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GeoFramework.Gps.dll" size="253952">
+      <assemblyIdentity name="GeoFramework.Gps" version="2.3.3600.13" publicKeyToken="3ED3CDF4FDDA3400" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>PFaY6rRnaSpLKlNnpVMrgDOA7s0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ICSharpCode.AvalonEdit.dll" size="528384">
+      <assemblyIdentity name="ICSharpCode.AvalonEdit" version="0.0.0.0" publicKeyToken="9CC39BE672370310" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>+/ak0cMX16g+cECSi+mj5rCG5SA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ICSharpCode.SharpZipLib.dll" size="196608">
+      <assemblyIdentity name="ICSharpCode.SharpZipLib" version="0.86.0.518" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>hnGSF4pSLjAMi82HJ9p7bU4XWI0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Maps.MapControl.WPF.dll" size="274944">
+      <assemblyIdentity name="Microsoft.Maps.MapControl.WPF" version="0.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>VENMYuNI37pk43+uJfEuYWZYF5k=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.WindowsCE.Forms.dll" size="23096">
+      <assemblyIdentity name="Microsoft.WindowsCE.Forms" version="2.0.0.0" publicKeyToken="969DB8053D3322AC" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>BZKNWGc27r3UN/mUfzQvlbBkQg4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Player.dll" size="1007104">
+      <assemblyIdentity name="Player" version="0.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>SNlEQJ1El2ITltSzPPatkrPaajc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Urwigo.exe" size="1510312">
+      <assemblyIdentity name="Urwigo" version="1.21.5528.18461" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>37fRi7Y3POqLONaQEnZ4dP3GazM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="cs\Urwigo.resources.dll" size="90112">
+      <assemblyIdentity name="Urwigo.resources" version="1.21.5528.18461" language="cs" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>P8GXB0DsdKfj0DJB9WAJRptBUaE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="de\Urwigo.resources.dll" size="81920">
+      <assemblyIdentity name="Urwigo.resources" version="1.21.5528.18461" language="de" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>+utM7/q8QspaGedxxn4tPt2xjio=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="YourSelf.Core.dll" size="71680">
+      <assemblyIdentity name="YourSelf.Core" version="1.1.5528.9260" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>AIRqFcGQk7URaZPkd2EGqPJPrSc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="YourSelf.Diagrams.dll" size="108032">
+      <assemblyIdentity name="YourSelf.Diagrams" version="1.0.5528.9264" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>3ElSWrVTZXjjJd4q54DumrrmjgA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="YourSelf.LuaParser.dll" size="179712">
+      <assemblyIdentity name="YourSelf.LuaParser" version="1.0.5528.9262" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>aB2eesVPHJYftCRj4At50YM9d5A=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="YourSelf.Urwigo.Map.dll" size="9728">
+      <assemblyIdentity name="YourSelf.Urwigo.Map" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>eUrSOpZ4CyAm6ROmd7EXebfYlrI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="YourSelf.Urwigo.ZonesLinker.dll" size="8704">
+      <assemblyIdentity name="YourSelf.Urwigo.ZonesLinker" version="1.0.5528.9263" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>zV+ifFSVTncdBbpviOcx4bAWlOE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="YourSelf.Wpf.dll" size="168960">
+      <assemblyIdentity name="YourSelf.Wpf" version="1.1.5528.9263" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>wel9DKMZTi0ioH/PBK3d96m+2tI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ZonesLinker.dll" size="45056">
+      <assemblyIdentity name="ZonesLinker" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>cMAxZnUKfDOYD6IekEnhZZcYfl8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="closestpoint.gif" size="924">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Ra0e70kHOy8EIWI0Txb0PGtfpfQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="fmod.dll" size="162816">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>5kQJ02d7c8HssHLwf0Yw9QCW4BM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\largetile.png" size="50258">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>cOziloQ6Ra02wjpQuANcMTlw1gw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\mediumtile.png" size="23413">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>PF4e4JVFDXMdqhVHgpuTwIQClAY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\smalltile.png" size="8963">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>9j/Qb4WE+I6CIKBnDxHlZTGeDN4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Urwigo.ico" size="293950">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>5xl+iHFbJkyiBfhtOFO2gFqKu30=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="map.html" size="4784">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ufiWYwPl8a8MKJFFzlu1K+qOAew=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="playeravatar.gif" size="1111">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>tl9Nwek7XVjDbgdge71WMWUKqRw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Urwigo.exe.config" size="3138">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>cLRMLmfPDzOhW+ClF9Fi6tpMaEo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Urwigo.pdb" size="1517056">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>IMK0wd/9DcVkgQLjDAq91sOo8YE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Urwigo.VisualElementsManifest.xml" size="352">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>P5+BJS078RaCYnqrIJsAHQsMXO4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="YourSelf.Core.pdb" size="230912">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>FuUqXS9z9EZRgtEkcKYzS9qtIhQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="YourSelf.Diagrams.pdb" size="142848">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Kdl69WFwYx6TDGg3x95y22jiziM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="YourSelf.LuaParser.pdb" size="491008">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>+Cg6Zjs+SELiEVAxecYe6QeUwYE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="YourSelf.Urwigo.ZonesLinker.pdb" size="15872">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>AWfs6ofxd0M65BqLfERHsWPiBQ4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="YourSelf.Wpf.pdb" size="511488">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>FwLd7ztcVg5zF4KxN486KVjZVjM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ZonesEngine.dll" size="364544">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>vpZGwFJuArMEmGwGsgbIIIuQvzk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <fileAssociation extension=".urwigo" description="Urwigo project" progid="UrwigoProjectFile" defaultIcon="Images\Urwigo.ico" xmlns="urn:schemas-microsoft-com:clickonce.v1" />
+<publisherIdentity name="CN=yourself-pc8\Pavel" issuerKeyHash="0e9c41196d66842908f251ae1c44d74b50a99466" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>xjj+hr7AWGZucXjW+bFXC6SL+uE=</DigestValue></Reference></SignedInfo><SignatureValue>yxR5xmG+Tki9rYQTIRcGSNCnavsOpamG32NVcGQLmi7UGDdhQJL277j3inOcUwf7u3fiiZPJDX89AT3yb3/BYdy+dVw8XCW8cW1iOpfWE+hr/3EslImXeNgvf2w0Sp8l/OgZ1hC1cOpJI4EyjPgD2TzGIc/EZl7nI79imsB1B/s=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>zP1DJqJVugOtig9bJudb08aqIBHWaSYsMUs+2vxEJ/UMLA5lnUmt262xeRSYZhokIPTWvluFp5mPMepEqQiu5hcVZw3aNapn68ar56nNPUnPfZddnIdBVu+hmpCOPRaGFzOk141ifOR/qiQrPXaaNAO2cINBCxIXKqf7eyjEd1s=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="e1fa8ba40b57b1f9d678716e6658c0be86fe38c6" Description="" Url=""><as:assemblyIdentity name="Urwigo.exe" version="1.21.0.143" publicKeyToken="a9a1b0751ac6516a" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=yourself-pc8\Pavel</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>kE7Dkm8cv4sPeEh2QVse719MqQA=</DigestValue></Reference></SignedInfo><SignatureValue>ryBkObKoLeqyGEw7cjC62piCqX29+q1Mphi00feMP2pTcgh5Os1T0sD1MSgqKqFsAp9Pc9M01Nt369nz9jpwnh1KAMZpC1JmUm7TDlN0tmUsTN/atZ2iOP/G2GvPLnKAymEUE2ahmt0iilsg4Tq9pdysBGVtH0LADvqiGRt1JYI=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>zP1DJqJVugOtig9bJudb08aqIBHWaSYsMUs+2vxEJ/UMLA5lnUmt262xeRSYZhokIPTWvluFp5mPMepEqQiu5hcVZw3aNapn68ar56nNPUnPfZddnIdBVu+hmpCOPRaGFzOk141ifOR/qiQrPXaaNAO2cINBCxIXKqf7eyjEd1s=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB4TCCAUqgAwIBAgIQFaqYsLNJcphLs+VBmusYtjANBgkqhkiG9w0BAQUFADAvMS0wKwYDVQQDHiQAeQBvAHUAcgBzAGUAbABmAC0AcABjADgAXABQAGEAdgBlAGwwHhcNMTUwMTE3MTI0MzQ5WhcNMTYwMTE3MTg0MzQ5WjAvMS0wKwYDVQQDHiQAeQBvAHUAcgBzAGUAbABmAC0AcABjADgAXABQAGEAdgBlAGwwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMz9QyaiVboDrYoPWybnW9PGqiAR1mkmLDFLPtr8RCf1DCwOZZ1JrdutsXkUmGYaJCD01r5bhaeZjzHqRKkIruYXFWcN2jWqZ+vGq+epzT1Jz32XXZyHQVbvoZqQjj0WhhczpNeNYnzkf6okKz12mjQDtnCDQQsSFyqn+3soxHdbAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAQp0T5xniX7yx0qTxZc0SDF3qsN4LaTPUYjLMQYGfZGHANWzNdDqfDF6W1uTpdW9gR4i7tlpWIBxrvfHnmveusLytlHQ/7eH1tJolTx5u9P2Zw2tgGuvQftvyPh9JiTVgOOOfadpNEKmt3o7GJWfEoBDUG1eX923dhWV3xua2m8g=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

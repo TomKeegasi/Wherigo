@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wherigo:WigoCartridge xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Wherigo="clr-namespace:YourSelf.Urwigo.Wherigo;assembly=Urwigo" xmlns:System="clr-namespace:System;assembly=mscorlib" xmlns:Actions="clr-namespace:YourSelf.Urwigo.Wherigo.Actions;assembly=Urwigo" key="key1">
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+<Name>
+<System:String>Cartridge</System:String>
+</Name>
+<Description>
+<System:String xsi:nil="true" />
+</Description>
+<Visible>
+<System:Boolean>True</System:Boolean>
+</Visible>
+<Image>
+<Wherigo:WigoMedia xsi:nil="true" />
+</Image>
+<Icon>
+<Wherigo:WigoMedia xsi:nil="true" />
+</Icon>
+<Activity>
+<Wherigo:WigoActivityType>TourGuide</Wherigo:WigoActivityType>
+</Activity>
+<StartingLocationDescription>
+<System:String xsi:nil="true" />
+</StartingLocationDescription>
+<StartingLocation>
+<Wherigo:WigoCoordinate xsi:nil="true" />
+</StartingLocation>
+<Version>
+<System:String xsi:nil="true" />
+</Version>
+<Company>
+<System:String xsi:nil="true" />
+</Company>
+<Author>
+<System:String xsi:nil="true" />
+</Author>
+<CreateDate>
+<System:DateTime>03/15/2015 13:08:56</System:DateTime>
+</CreateDate>
+<UpdateDate>
+<System:DateTime>03/15/2015 14:40:41</System:DateTime>
+</UpdateDate>
+<Complete>
+<System:Boolean>False</System:Boolean>
+</Complete>
+<UseLogging>
+<System:Boolean>False</System:Boolean>
+</UseLogging>
+<InlineRequires>
+<System:Boolean>False</System:Boolean>
+</InlineRequires>
+<InlineRequireLuaPath>
+<System:String>?.lua; lua\?.lua; lua\?\init.lua; ?\init.lua</System:String>
+</InlineRequireLuaPath>
+<ObfuscateStrings>
+<System:Boolean>True</System:Boolean>
+</ObfuscateStrings>
+<HashInputAnswers>
+<System:Boolean>True</System:Boolean>
+</HashInputAnswers>
+<ObfuscateIdentifiers>
+<System:Boolean>True</System:Boolean>
+</ObfuscateIdentifiers>
+<ProtectEmulator>
+<System:Boolean>False</System:Boolean>
+</ProtectEmulator>
+<ProtectEmulatorText>
+<System:String xsi:nil="true" />
+</ProtectEmulatorText>
+<ProtectSimulation>
+<System:Boolean>False</System:Boolean>
+</ProtectSimulation>
+<ProtectSimulationText>
+<System:String xsi:nil="true" />
+</ProtectSimulationText>
+<Characters>
+<Wherigo:WigoCharacter key="key0">
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+<Name>
+<System:String>Name</System:String>
+</Name>
+<Description>
+<System:String xsi:nil="true" />
+</Description>
+<Visible>
+<System:Boolean>True</System:Boolean>
+</Visible>
+<Image>
+<Wherigo:WigoMedia xsi:nil="true" />
+</Image>
+<Icon>
+<Wherigo:WigoMedia xsi:nil="true" />
+</Icon>
+<ObjectLocation>
+<Wherigo:WigoObjectLocation xsi:nil="true" />
+</ObjectLocation>
+<ClickAction>
+<Actions:EventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Owner>
+<Wherigo:WigoCharacter xsi:nil="true" ref="key0" />
+</Owner>
+</Actions:EventAction>
+</ClickAction>
+<Gender>
+<Wherigo:WigoCharacterGender>Male</Wherigo:WigoCharacterGender>
+</Gender>
+</Wherigo:WigoCharacter>
+</Characters>
+<Player>
+<Wherigo:WigoPlayer>
+<Identifier>
+<System:String>Player</System:String>
+</Identifier>
+</Wherigo:WigoPlayer>
+</Player>
+<CurrentZone>
+<Wherigo:WigoCurrentZone>
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+</Wherigo:WigoCurrentZone>
+</CurrentZone>
+<CurrentCharacter>
+<Wherigo:WigoCurrentCharacter>
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+</Wherigo:WigoCurrentCharacter>
+</CurrentCharacter>
+<CurrentItem>
+<Wherigo:WigoCurrentItem>
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+</Wherigo:WigoCurrentItem>
+</CurrentItem>
+<CurrentTask>
+<Wherigo:WigoCurrentTask>
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+</Wherigo:WigoCurrentTask>
+</CurrentTask>
+<CurrentInput>
+<Wherigo:WigoCurrentInput>
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+</Wherigo:WigoCurrentInput>
+</CurrentInput>
+<CurrentTimer>
+<Wherigo:WigoCurrentTimer>
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+</Wherigo:WigoCurrentTimer>
+</CurrentTimer>
+<Environment>
+<Wherigo:WigoEnvironment>
+<Identifier>
+<System:String>Env</System:String>
+</Identifier>
+</Wherigo:WigoEnvironment>
+</Environment>
+<StartAction>
+<Actions:EventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Owner>
+<Wherigo:WigoCartridge xsi:nil="true" ref="key1" />
+</Owner>
+</Actions:EventAction>
+</StartAction>
+<EndAction>
+<Actions:EventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Owner>
+<Wherigo:WigoCartridge xsi:nil="true" ref="key1" />
+</Owner>
+</Actions:EventAction>
+</EndAction>
+<ResumeAction>
+<Actions:EventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Owner>
+<Wherigo:WigoCartridge xsi:nil="true" ref="key1" />
+</Owner>
+</Actions:EventAction>
+</ResumeAction>
+<SaveAction>
+<Actions:EventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Owner>
+<Wherigo:WigoCartridge xsi:nil="true" ref="key1" />
+</Owner>
+</Actions:EventAction>
+</SaveAction>
+<GlobalZoneEnterAction>
+<Actions:GlobalEventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Owner>
+<Wherigo:WigoCartridge xsi:nil="true" ref="key1" />
+</Owner>
+</Actions:GlobalEventAction>
+</GlobalZoneEnterAction>
+<GlobalZoneExitAction>
+<Actions:GlobalEventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Owner>
+<Wherigo:WigoCartridge xsi:nil="true" ref="key1" />
+</Owner>
+</Actions:GlobalEventAction>
+</GlobalZoneExitAction>
+<GlobalZoneDistantAction>
+<Actions:GlobalEventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Owner>
+<Wherigo:WigoCartridge xsi:nil="true" ref="key1" />
+</Owner>
+</Actions:GlobalEventAction>
+</GlobalZoneDistantAction>
+<GlobalZoneProximityAction>
+<Actions:GlobalEventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Owner>
+<Wherigo:WigoCartridge xsi:nil="true" ref="key1" />
+</Owner>
+</Actions:GlobalEventAction>
+</GlobalZoneProximityAction>
+<GlobalZoneActiveChangedAction>
+<Actions:GlobalEventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Owner>
+<Wherigo:WigoCartridge xsi:nil="true" ref="key1" />
+</Owner>
+</Actions:GlobalEventAction>
+</GlobalZoneActiveChangedAction>
+<UserDirectives>
+<System:String xsi:nil="true" />
+</UserDirectives>
+<UserFunctions>
+<System:String xsi:nil="true" />
+</UserFunctions>
+</Wherigo:WigoCartridge>

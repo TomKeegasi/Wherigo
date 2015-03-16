@@ -1,0 +1,305 @@
+{
+    [VectorToSegment] = (function: 2F9407E0)
+    [ZTimer] = (a ZTimer class)
+    {
+        [init] = (function: 35820120)
+        [Class] = (a ZTimer class)
+        [__tostring] = (function: 358200E0)
+        [begin] = (function: 35820140)
+        [super] = (a ZObject class)
+        {
+            [InsideOf] = (function: 199600E0)
+            [Class] = (a ZObject class)
+            [__tostring] = (function: 286907C0)
+            [SetVisible] = (function: 286908B0)
+            [SetIcon] = (function: 28690900)
+            [SetDescription] = (function: 28690888)
+            [serialize] = (function: 28690820)
+            [init] = (function: 28690800)
+            [SetMedia] = (function: 286908D8)
+            [MoveTo] = (function: 28690928)
+            [GetCurrentBearing] = (function: 199600C0)
+            [GetObjectLocation] = (function: 19960080)
+            [SetName] = (function: 0C1A00C8)
+            [ClassName] = "ZObject"
+            [SetContainer] = (function: 19960060)
+            [Contains] = (function: 19960100)
+            [GetCurrentDistance] = (function: 199600A0)
+            [super] = (an Object class)
+            {
+                [isa] = (function: 2F9405A0)
+                [serialize] = (function: 2F940520)
+                [init] = (function: 2F940500)
+                [subclass] = (function: 2F9404C0)
+                [Class] = (an Object class)
+                [__tostring] = (function: 2F940560)
+                [rawget] = (function: 2F940600)
+                [ClassName] = "Object"
+                [InvalidMember] = (function: 2F940580)
+                [rawset] = (function: 2F9405E0)
+                [made] = (function: 2F9405C0)
+                [deserialize] = (function: 2F940540)
+            }
+        }
+        [Stop] = (function: 35820180)
+        [ClassName] = "ZTimer"
+        [Start] = (function: 35820160)
+        [Tick] = (function: 358201A0)
+    }
+    [ZCharacter] = (a ZCharacter class)
+    {
+        [serialize] = (function: 19960580)
+        [SetCommandsArray] = (function: 199605E0)
+        [init] = (function: 19960560)
+        [Class] = (a ZCharacter class)
+        [__tostring] = (function: 19960520)
+        [super] = (a ZObject class)
+        [AddCommand] = (function: 19960600)
+        [ClassName] = "ZCharacter"
+        [SetCommands] = (function: 199605C0)
+        [SetType] = (function: 28690B80)
+        [SetGender] = (function: 28690B58)
+        [deserialize] = (function: 199605A0)
+    }
+    [ShowScreen] = (function: 28690220)
+    [GetInput] = (function: 286901C0)
+    [ZMedia] = (a ZMedia class)
+    {
+        [super] = (a ZObject class)
+        [ClassName] = "ZMedia"
+        [serialize] = (function: 358200C0)
+        [Class] = (a ZMedia class)
+        [__tostring] = (function: 35820060)
+        [init] = (function: 358200A0)
+    }
+    [MessageBox] = (function: 28690180)
+    [VectorToPoint] = (function: 2F940800)
+    [_PACKAGE] = ""
+    [IsPointInZone] = (function: 0C1AB9F0)
+    [LOGERROR] = 4
+    [LOCATIONSCREEN] = 1
+    [Object] = (an Object class)
+    [LOGINFO] = 2
+    [t] = (a ZTimer class)
+    [LOGCARTRIDGE] = 1
+    [Inject] = (function: 35820420)
+    [MiscZObjects] = (table: 29660240)
+    {
+        [-101] = (a ZMedia instance)
+        {
+        }
+        [-102] = (a ZMedia instance)
+        {
+        }
+        [-21555] = (a ZCharacter instance)
+        {
+        }
+    }
+    [Zone] = (a Zone class)
+    {
+        [Exit] = (function: 19960360)
+        [SetCommandsArray] = (function: 199604A0)
+        [Cache] = (function: 19960460)
+        [Class] = (a Zone class)
+        [__tostring] = (function: 199602E0)
+        [NotInRange] = (function: 199603C0)
+        [deserialize] = (function: 19960500)
+        [serialize] = (function: 199604E0)
+        [Proximity] = (function: 19960380)
+        [init] = (function: 19960320)
+        [SetCommands] = (function: 19960480)
+        [GetName] = (function: 19960400)
+        [AddCommand] = (function: 199604C0)
+        [Enter] = (function: 19960340)
+        [GetObjectLocation] = (function: 199603E0)
+        [AreObjectsVisible] = (function: 19960420)
+        [ClassName] = "Zone"
+        [Distant] = (function: 199603A0)
+        [Contains] = (function: 19960440)
+        [SetActive] = (function: 28690AB8)
+        [super] = (a ZObject class)
+    }
+    [ITEMSCREEN] = 2
+    [ZInput] = (a ZInput class)
+    {
+        [Show] = (function: 19960800)
+        [super] = (a ZObject class)
+        [ClassName] = "ZInput"
+        [init] = (function: 199607E0)
+        [Class] = (a ZInput class)
+        [__tostring] = (function: 199607A0)
+        [GetInput] = (function: 19960820)
+    }
+    [ZReciprocalCommand] = (a ZReciprocalCommand class)
+    {
+        [GetEnabled] = (function: 28690720)
+        [init] = (function: 286906C0)
+        [SetMakeReciprocal] = (function: 28690760)
+        [Class] = (a ZReciprocalCommand class)
+        [__tostring] = (function: 28690680)
+        [AddReciprocalObject] = (function: 286906E0)
+        [SetText] = (function: 28690700)
+        [ClassName] = "ZReciprocalCommand"
+        [GetWorksWithList] = (function: 28690780)
+        [exec] = (function: 286907A0)
+        [SetEnabled] = (function: 28690740)
+        [super] = (a ZCommand class)
+        {
+            [CalcTargetObjects] = (function: 28690660)
+            [init] = (function: 286905E0)
+            [Class] = (a ZCommand class)
+            [__tostring] = (function: 286905A0)
+            [super] = (an Object class)
+            [ClassName] = "ZCommand"
+            [exec] = (function: 28690640)
+            [SetEnabled] = (function: 28690620)
+            [SetText] = (function: 28690600)
+        }
+    }
+    [ZObject] = (a ZObject class)
+    [ZCartridge] = (a ZCartridge class)
+    {
+        [Class] = (a ZCartridge class)
+        [__tostring] = (function: 19960120)
+        [super] = (a ZObject class)
+        [SetComplete] = (function: 286909F0)
+        [Restore] = (function: 199601C0)
+        [deserialize] = (function: 19960220)
+        [serialize] = (function: 19960200)
+        [init] = (function: 19960160)
+        [AddZObject] = (function: 19960280)
+        [GetAllOfType] = (function: 199602C0)
+        [GetObjectLocation] = (function: 19960240)
+        [Stop] = (function: 199601E0)
+        [ClassName] = "ZCartridge"
+        [Start] = (function: 19960180)
+        [RemoveZObject] = (function: 199602A0)
+        [RequestSync] = (function: 19960260)
+        [Sync] = (function: 199601A0)
+    }
+    [ZItem] = (a ZItem class)
+    {
+        [serialize] = (function: 19960680)
+        [SetCommandsArray] = (function: 199606E0)
+        [init] = (function: 19960660)
+        [Class] = (a ZItem class)
+        [__tostring] = (function: 19960620)
+        [super] = (a ZObject class)
+        [ClassName] = "ZItem"
+        [AddCommand] = (function: 19960700)
+        [SetCommands] = (function: 199606C0)
+        [deserialize] = (function: 199606A0)
+    }
+    [LogMessage] = (function: 28690160)
+    [ZTask] = (a ZTask class)
+    {
+        [init] = (function: 19960760)
+        [Class] = (a ZTask class)
+        [__tostring] = (function: 19960720)
+        [SetActive] = (function: 4E3700B0)
+        [SetComplete] = (function: 4E3700D8)
+        [ClassName] = "ZTask"
+        [PreSortTaskList] = (function: 19960780)
+        [SetCorrectState] = (function: 4E370100)
+        [super] = (a ZObject class)
+    }
+    [Command] = (function: 28690140)
+    [_M] = (table: 0C198D38)
+    {
+        [VectorToSegment] = (function: 2F9407E0)
+        [ZTimer] = (a ZTimer class)
+        [ZCharacter] = (a ZCharacter class)
+        [ShowScreen] = (function: 28690220)
+        [GetInput] = (function: 286901C0)
+        [ZMedia] = (a ZMedia class)
+        [MessageBox] = (function: 28690180)
+        [VectorToPoint] = (function: 2F940800)
+        [_PACKAGE] = ""
+        [IsPointInZone] = (function: 0C1AB9F0)
+        [LOGERROR] = 4
+        [LOCATIONSCREEN] = 1
+        [Object] = (an Object class)
+        [LOGINFO] = 2
+        [t] = (a ZTimer class)
+        [LOGCARTRIDGE] = 1
+        [Inject] = (function: 35820420)
+        [MiscZObjects] = (table: 29660240)
+        [Zone] = (a Zone class)
+        [ITEMSCREEN] = 2
+        [ZInput] = (a ZInput class)
+        [ZReciprocalCommand] = (a ZReciprocalCommand class)
+        [ZObject] = (a ZObject class)
+        [ZCartridge] = (a ZCartridge class)
+        [ZItem] = (a ZItem class)
+        [LogMessage] = (function: 28690160)
+        [ZTask] = (a ZTask class)
+        [Command] = (function: 28690140)
+        [_M] = (table: 0C198D38)
+        [ZCommand] = (a ZCommand class)
+        [INVALID_ZONEPOINT] = (ZonePoint(360, 360, Distance(360, 'm')))
+        {
+        }
+        [ZonePoint] = (a ZonePoint class)
+        {
+            [Setaltitude] = (function: 286904E0)
+            [super] = (an Object class)
+            [Clone] = (function: 28690480)
+            [ClassName] = "ZonePoint"
+            [__eq] = (function: 286904A0)
+            [Class] = (a ZonePoint class)
+            [__tostring] = (function: 286904C0)
+            [init] = (function: 28690460)
+        }
+        [Distance] = (a Distance class)
+        {
+            [GetValue] = (function: 28690400)
+            [SetValue] = (function: 286903E0)
+            [__eq] = (function: 286902E0)
+            [init] = (function: 28690280)
+            [__div] = (function: 286903A0)
+            [Class] = (a Distance class)
+            [__tostring] = (function: 286902C0)
+            [__mul] = (function: 28690380)
+            [__lt] = (function: 28690300)
+            [super] = (an Object class)
+            [Clone] = (function: 286902A0)
+            [ClassName] = "Distance"
+            [__sub] = (function: 28690360)
+            [__add] = (function: 28690340)
+            [__le] = (function: 28690320)
+            [__call] = (function: 286903C0)
+        }
+        [_NAME] = "Wherigo"
+        [NoCaseEquals] = (function: 2F940700)
+        [TranslatePoint] = (function: 2F940820)
+        [VectorToZone] = (function: 2F9407C0)
+        [INVENTORYSCREEN] = 3
+        [DETAILSCREEN] = 5
+        [LOGWARNING] = 3
+        [Player] = (a ZCharacter instance)
+        [LOGDEBUG] = 0
+        [MAINSCREEN] = 0
+        [TASKSCREEN] = 4
+        [ShowStatusText] = (function: 28690200)
+        [PlayAudio] = (function: 286901E0)
+        [Dialog] = (function: 286901A0)
+    }
+    [ZCommand] = (a ZCommand class)
+    [INVALID_ZONEPOINT] = (ZonePoint(360, 360, Distance(360, 'm')))
+    [ZonePoint] = (a ZonePoint class)
+    [Distance] = (a Distance class)
+    [_NAME] = "Wherigo"
+    [NoCaseEquals] = (function: 2F940700)
+    [TranslatePoint] = (function: 2F940820)
+    [VectorToZone] = (function: 2F9407C0)
+    [INVENTORYSCREEN] = 3
+    [DETAILSCREEN] = 5
+    [LOGWARNING] = 3
+    [Player] = (a ZCharacter instance)
+    [LOGDEBUG] = 0
+    [MAINSCREEN] = 0
+    [TASKSCREEN] = 4
+    [ShowStatusText] = (function: 28690200)
+    [PlayAudio] = (function: 286901E0)
+    [Dialog] = (function: 286901A0)
+}

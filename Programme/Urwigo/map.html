@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <style type="text/css"> 
+        v\:* { 
+          behavior:url(#default#VML); 
+        } 
+    </style>
+    <title>Google Map Viewer</title>
+    <script src="http://maps.google.com/maps?file=js&amp;v=2.69&amp;key=AIzaSyCq5MuVdqGBMtQCbZJNsZ3Y34_WFWsXPMw" type="text/javascript"></script>
+    <script type="text/javascript">
+//<![CDATA[
+var g_Map;
+var g_Marker;
+var g_Zones = [];
+var g_ClosestPointMarkers = [];
+var closestPointIcon = new GIcon();
+var geocoder = null;
+
+function getQueryVariable(variable) {
+ var query = window.location.search.substring(1);
+ var vars = query.split("&");
+ for (var i=0;i<vars.length;i++)
+ {
+  var pair = vars[i].split("=");
+  if (pair[0] == variable)
+  {
+   return pair[1];
+  }
+ }
+ return "500";
+  //alert('Query Variable ' + variable + ' not found');
+}
+
+function load() {
+ var w = parseInt(getQueryVariable("w"));
+ var h = parseInt(getQueryVariable("h"));
+ var mapDiv = document.getElementById("map");
+ mapDiv.style.width = w + "px";
+ mapDiv.style.height = h + "px";
+ g_Map = new GMap2(mapDiv);
+ g_Map.addControl(new GMapTypeControl());
+ g_Map.addControl(new GSmallMapControl());
+ g_Map.addControl(new GScaleControl());
+ g_Map.setCenter(new GLatLng(51.478105, 0), 4);
+ g_Map.addControl(new GOverviewMapControl());
+ //g_Map.enableDoubleClickZoom();
+ g_Map.enableContinuousZoom();
+ 
+ geocoder = new GClientGeocoder();
+
+ var myIcon = new GIcon();
+ myIcon.image = "playeravatar.gif";
+ myIcon.iconSize = new GSize(12, 34);
+ myIcon.iconAnchor = new GPoint(6, 30);
+ 
+ closestPointIcon = new GIcon();
+ closestPointIcon.image = "closestpoint.gif";
+ closestPointIcon.iconSize = new GSize(12, 12);
+ closestPointIcon.iconAnchor = new GPoint(6, 6);
+  
+ g_Marker = new GMarker(new GLatLng(0,0), {draggable: true, icon: myIcon});
+ g_Map.addOverlay(g_Marker); 
+
+ GEvent.addListener(g_Marker, "drag", function(point) {
+   var loc = g_Marker.getPoint()
+   window.external.js_PositionReceived(loc.lat(), loc.lng());
+  });
+
+ GEvent.addListener(g_Map, "zoomend", function(oldLevel, newLevel) {
+   window.external.js_ZoomChanged(oldLevel, newLevel);
+  });
+
+ GEvent.addListener(g_Map, "click", function(overlay, point) {
+   if (null == overlay)
+    window.external.js_LeftClick(point.lat(), point.lng());
+  });    
+}
+
+function test() {
+ //g_Zones = [];
+ var points = [new GLatLng(47.616, -122.343), new GLatLng(47.6155, -122.340), new GLatLng(47.615, -122.343)];
+}
+
+function doEval(cmds) {
+ return eval(cmds);
+}
+
+function resizeMapDiv(newWidth, newHeight) {
+ var mapDiv = document.getElementById("map");
+ mapDiv.style.width = parseInt(newWidth);
+ mapDiv.style.height = parseInt(newHeight);
+ g_Map.checkResize();
+}
+
+function moveMarker(point) {
+ g_Marker.setPoint(point);
+ window.external.js_PositionReceived(point.lat(), point.lng());
+}
+
+function addZone(strPoints, color) {
+ g_Zones.push(new GPolygon(eval(strPoints), "#000000", 0, 1, color, 0.25));
+ return g_Zones.length - 1;
+}
+
+function addClosestPoint(point) {
+ g_ClosestPointMarkers.push(new GMarker(new GLatLng(point.lat(),point.lng()),  {draggable: false, icon: closestPointIcon}));
+ return g_ClosestPointMarkers.length - 1;
+}
+
+function clearClosestPoints() {
+    for (var i = 0; i < g_ClosestPointMarkers.length; i++)
+        g_Map.removeOverlay(g_ClosestPointMarkers[i]);
+    g_ClosestPointMarkers.length = 0;
+}
+
+function showClosestPoints() { 
+    for (var i = 0; i < g_ClosestPointMarkers.length; i++)                  
+        g_Map.addOverlay(g_ClosestPointMarkers[i]);    
+}
+
+function showZones(show) {
+ if (show)
+ {
+  for (var i = 0; i < g_Zones.length; i++)
+   g_Map.addOverlay(g_Zones[i]);
+ }
+ else
+ {
+  for (var i = 0; i < g_Zones.length; i++)
+   g_Map.removeOverlay(g_Zones[i]);
+ }
+}
+
+function clearZones() {
+ showZones(false);
+ g_Zones.length = 0;
+}
+
+function centerwithAddress(address) {
+      if (geocoder) {
+        geocoder.getLatLng(
+          address,
+          function(point) {
+            if (!point) {
+              alert(address + " not found");
+            } else {
+              g_Map.setCenter(point, 4);                            
+            }
+          }
+        );
+      }
+    }
+   
+//]]>
+    </script>
+  </head>
+  <body onload="load()" onunload="GUnload()" style="margin:0; padding:0">
+    <div id="map" style="width: 500px; height: 300px"></div>
+    <input type="button" value="click" onclick="javascript:test();" />     
+  </body>
+</html>
