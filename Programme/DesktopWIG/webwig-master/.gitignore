@@ -1,0 +1,11 @@
+STAGING
+mess
+*.o
+*.a
+wig
+gws2xml
+*.gwc
+lua/*.o
+lua/*.a
+lua/lua
+data/*

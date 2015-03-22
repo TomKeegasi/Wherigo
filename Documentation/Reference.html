@@ -1,0 +1,2435 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0058)http://jakuje.dta3.com/webwig/luadoc/index.html#MessageBox -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Reference</title>
+    <link rel="stylesheet" href="./Reference_files/ldoc.css" type="text/css">
+<style>#header + #content > #left > #rlblock_left,
+#content > #right > .dose > .dosesingle,
+#content > #center > .dose > .dosesingle
+{display:none !important;}</style><style>img[src="http://toplist.cz/count.asp?id=1185319&logo=mc&http=&t=WebWig%20-%20Wherigo%20Player%20for%20WebOS%20-%20Jakuje.dta3.com%20-%20Just%20another%20blogging%20system&wi=1280&he=1024&cd=24"]
+{display:none !important;}</style></head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br>
+<h1>ldoc</h1>
+
+
+<h2>Contents</h2>
+<ul>
+<li><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Functions">Functions</a></li>
+<li><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Tables">Tables</a></li>
+<li><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Class_Wherigo_Bearing">Class Wherigo.Bearing </a></li>
+<li><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Class_Wherigo_Distance">Class Wherigo.Distance </a></li>
+<li><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Class_Wherigo_ZCommand">Class Wherigo.ZCommand </a></li>
+<li><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Class_Wherigo_ZReciprocalCommand">Class Wherigo.ZReciprocalCommand </a></li>
+<li><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Class_Wherigo_ZObject">Class Wherigo.ZObject </a></li>
+<li><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Class_Wherigo_ZonePoint">Class Wherigo.ZonePoint </a></li>
+<li><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Class_Wherigo_Zone">Class Wherigo.Zone </a></li>
+<li><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Class_Wherigo_ZCartridge">Class Wherigo.ZCartridge </a></li>
+<li><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Class_Wherigo_ZMedia">Class Wherigo.ZMedia </a></li>
+<li><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Class_Wherigo_ZItem">Class Wherigo.ZItem </a></li>
+<li><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Class_Wherigo_ZTask">Class Wherigo.ZTask </a></li>
+<li><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Class_Wherigo_ZTimer">Class Wherigo.ZTimer </a></li>
+<li><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Class_Wherigo_ZInput">Class Wherigo.ZInput </a></li>
+<li><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Class_Wherigo_ZCharacter">Class Wherigo.ZCharacter </a></li>
+<li><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Class_Wherigo_Player">Class Wherigo.Player </a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul>
+  <li><strong>Wherigo</strong></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>Wherigo</code></h1>
+
+<p>Wherigo Library, backward compatible with Wherigo Library by Groundspeak</p>
+<p></p>
+    <h3>Info:</h3>
+    <ul>
+        <li><strong>Copyright</strong>: 2012 - 2013</li>
+        <li><strong>Author</strong>: Jakub Jelen <a href="mailto:xjelen06@stud.fit.vutbr.cz">xjelen06@stud.fit.vutbr.cz</a></li>
+    </ul>
+
+
+<h2><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Functions">Functions</a></h2>
+<table class="function_list">
+	<tbody><tr>
+	<td class="name" nowrap=""><a href="./Reference_files/Reference.html">MessageBox&nbsp;(t)</a></td>
+	<td class="summary">Show message to user
+   accepts table param or multiple parameters as below.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#_MessageBoxResponse">_MessageBoxResponse&nbsp;(action)</a></td>
+	<td class="summary">Receives users response and calls desired callback.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Dialog">Dialog&nbsp;(t)</a></td>
+	<td class="summary">Shows series of messages to user, one after another.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#PlayAudio">PlayAudio&nbsp;(Media)</a></td>
+	<td class="summary">Request to play user some audio.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#ShowStatusText">ShowStatusText&nbsp;(Text)</a></td>
+	<td class="summary">Shows status text somewhere.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#VectorToZone">VectorToZone&nbsp;(point, zone)</a></td>
+	<td class="summary">Calculates distance from given point to nearest point of given zone</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#VectorToSegment">VectorToSegment&nbsp;(point, p1, p2)</a></td>
+	<td class="summary">Calculates distance from given point to nearest point on segment of zone
+   defined by two points (p1, p2)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Inject">Inject&nbsp;()</a></td>
+	<td class="summary">Unknown purpose</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#IsPointInZone">IsPointInZone&nbsp;(point, zone)</a></td>
+	<td class="summary">Determines whether is given point in given zone using Minimal Bounding
+   Box algorithm and then with Cross Count algorithm</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#TranslatePoint">TranslatePoint&nbsp;(point, distance, bearing)</a></td>
+	<td class="summary">Calculate new position of point, which is translated by given distance
+   and with given bearing</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#VectorToPoint">VectorToPoint&nbsp;(p1, p2)</a></td>
+	<td class="summary">Calculate distance and bearing from one point to another</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#NoCaseEquals">NoCaseEquals&nbsp;(f, s)</a></td>
+	<td class="summary">Compare two strings ignoring case</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Command">Command&nbsp;(text)</a></td>
+	<td class="summary">Sends some command to engine<br>
+    Possible values:
+    <ul>
+		<li>SaveClose	- Saves cartridges and prompt user to quit
+		</li><li>DriveTo		- This should start Turn-by-turn navigation, but it is not used
+		</li><li>StopSound	- Stops playing sound in user interface
+		</li><li>Alert		- Beep.</li></ul></td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#LogMessage">LogMessage&nbsp;(Text, Level)</a></td>
+	<td class="summary">Write message into logfile for opened cartridge
+   params can be table</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#GetInput">GetInput&nbsp;(input)</a></td>
+	<td class="summary">Request user to fill in input.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#_GetInputResponse">_GetInputResponse&nbsp;(response)</a></td>
+	<td class="summary">Callback of GetInput.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#ShowScreen">ShowScreen&nbsp;(screen, item)</a></td>
+	<td class="summary">Sends request to user interface to show screen</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#__tonumber">__tonumber&nbsp;(arg)</a></td>
+	<td class="summary">Conversion function from Distance or Bearing object to number
+   used in metamethods to arithmetic and comparisons</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#_callback">_callback&nbsp;(event, id)</a></td>
+	<td class="summary">Execute user command or click event on UI item.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#_getMediaField">_getMediaField&nbsp;(field, t)</a></td>
+	<td class="summary">Get field with media path in JSON notation for UI.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#_addCommands">_addCommands&nbsp;(item)</a></td>
+	<td class="summary">Get Commands field with array of enabled commands for current object in JSON notation.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#_bool2str">_bool2str&nbsp;(b)</a></td>
+	<td class="summary">Convert boolean value to string for JSON notation.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#_toJSON">_toJSON&nbsp;(str)</a></td>
+	<td class="summary">Escape string to put in JSON structure.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#_getUI">_getUI&nbsp;()</a></td>
+	<td class="summary">Get JSON fields to send to UI, containing all 4 sections, without brackets around,
+   so C++ can add more fields.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#_getLocations">_getLocations&nbsp;()</a></td>
+	<td class="summary">Get Locations data in JSON to be send to UI.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#_getInventory">_getInventory&nbsp;()</a></td>
+	<td class="summary">Get Inventory data in JSON to be send to UI.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#_getYouSee">_getYouSee&nbsp;()</a></td>
+	<td class="summary">Get YouSee data in JSON to be send to UI.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#_getTasks">_getTasks&nbsp;()</a></td>
+	<td class="summary">Get Tasks data in JSON to be send to UI.</td>
+	</tr>
+</tbody></table>
+<h2><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Tables">Tables</a></h2>
+<table class="function_list">
+	<tbody><tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#_Internal">_Internal</a></td>
+	<td class="summary">Virtual object to execute command with other item, same way as GetInput.</td>
+	</tr>
+</tbody></table>
+<h2><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Class_Wherigo_Bearing">Class Wherigo.Bearing </a></h2>
+<table class="function_list">
+	<tbody><tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.Bearing.metatable">Wherigo.Bearing.metatable</a></td>
+	<td class="summary">Metatable for Bearing objects.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.Bearing.new">Wherigo.Bearing.new&nbsp;(value)</a></td>
+	<td class="summary">Bearing object constructor.</td>
+	</tr>
+</tbody></table>
+<h2><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Class_Wherigo_Distance">Class Wherigo.Distance </a></h2>
+<table class="function_list">
+	<tbody><tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.Distance.metatable">Wherigo.Distance.metatable</a></td>
+	<td class="summary">Metatable for Distance objects.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.Distance.new">Wherigo.Distance.new&nbsp;(value, units)</a></td>
+	<td class="summary">Distance object constructor.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.Distance:GetValue">Wherigo.Distance:GetValue&nbsp;(units)</a></td>
+	<td class="summary">Conversion function to get distance in other units</td>
+	</tr>
+</tbody></table>
+<h2><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Class_Wherigo_ZCommand">Class Wherigo.ZCommand </a></h2>
+<table class="function_list">
+	<tbody><tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.ZCommand.metatable">Wherigo.ZCommand.metatable</a></td>
+	<td class="summary">Metatable for ZCommand objects.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.ZCommand.new">Wherigo.ZCommand.new&nbsp;(table)</a></td>
+	<td class="summary">ZCommand object constructor.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#ZCommand:made">ZCommand:made&nbsp;(object)</a></td>
+	<td class="summary">Check membership of given object to class ZCommand</td>
+	</tr>
+</tbody></table>
+<h2><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Class_Wherigo_ZReciprocalCommand">Class Wherigo.ZReciprocalCommand </a></h2>
+<table class="function_list">
+	<tbody><tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.ZReciprocalCommand.metatable">Wherigo.ZReciprocalCommand.metatable</a></td>
+	<td class="summary">Metatable for ZReciprocalCommand objects.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.ZReciprocalCommand.new">Wherigo.ZReciprocalCommand.new&nbsp;(table)</a></td>
+	<td class="summary">ZReciprocalCommand object constructor.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#ZReciprocalCommand:made">ZReciprocalCommand:made&nbsp;(object)</a></td>
+	<td class="summary">Check membership of given object to class ZReciprocalCommand</td>
+	</tr>
+</tbody></table>
+<h2><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Class_Wherigo_ZObject">Class Wherigo.ZObject </a></h2>
+<table class="function_list">
+	<tbody><tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.ZObject.metatable">Wherigo.ZObject.metatable</a></td>
+	<td class="summary">Metatable for ZObject objects.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.ZObject.new">Wherigo.ZObject.new&nbsp;(cartridge, container)</a></td>
+	<td class="summary">ZObject constructor.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.ZObject:Contains">Wherigo.ZObject:Contains&nbsp;(obj)</a></td>
+	<td class="summary">Check weather obj is contained in self container (recursive search)
+   Special handling for Player and detecting if is in zone.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.ZObject:MoveTo">Wherigo.ZObject:MoveTo&nbsp;(owner)</a></td>
+	<td class="summary">Move self object to another container or to nil</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.ZObject:_is_visible">Wherigo.ZObject:_is_visible&nbsp;()</a></td>
+	<td class="summary">Checks if self object is visible to player.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.ZObject:_get_pos">Wherigo.ZObject:_get_pos&nbsp;()</a></td>
+	<td class="summary">Return position of object.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#ZObject:made">ZObject:made&nbsp;(object)</a></td>
+	<td class="summary">Check membership of given object to class ZObject</td>
+	</tr>
+</tbody></table>
+<h2><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Class_Wherigo_ZonePoint">Class Wherigo.ZonePoint </a></h2>
+<table class="function_list">
+	<tbody><tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.ZonePoint.metatable">Wherigo.ZonePoint.metatable</a></td>
+	<td class="summary">Metatable for ZonePoint objects.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.ZonePoint.new">Wherigo.ZonePoint.new&nbsp;(lat, lon, alt)</a></td>
+	<td class="summary">ZonePoint constructor.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#ZonePoint:made">ZonePoint:made&nbsp;(object)</a></td>
+	<td class="summary">Check membership of given object to class ZonePoint</td>
+	</tr>
+</tbody></table>
+<h2><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Class_Wherigo_Zone">Class Wherigo.Zone </a></h2>
+<table class="function_list">
+	<tbody><tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.Zone.metatable">Wherigo.Zone.metatable</a></td>
+	<td class="summary">Metatable for ZonePoint objects.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.Zone.new">Wherigo.Zone.new&nbsp;(cartridge)</a></td>
+	<td class="summary">Zone constructor, extend ZObject.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.Zone._calculateBoundingBox">Wherigo.Zone._calculateBoundingBox&nbsp;()</a></td>
+	<td class="summary">Computes minimum bounding rectangle of this zone.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Zone:made">Zone:made&nbsp;(object)</a></td>
+	<td class="summary">Check membership of given object to class Zone</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.Zone._update">Wherigo.Zone._update&nbsp;(v)</a></td>
+	<td class="summary">Update zone state depending on location update.</td>
+	</tr>
+</tbody></table>
+<h2><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Class_Wherigo_ZCartridge">Class Wherigo.ZCartridge </a></h2>
+<table class="function_list">
+	<tbody><tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.ZCartridge.metatable">Wherigo.ZCartridge.metatable</a></td>
+	<td class="summary">Metatable for ZCartridge object.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.ZCartridge.new">Wherigo.ZCartridge.new&nbsp;()</a></td>
+	<td class="summary">ZCartridge constructor, extend ZObject.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#ZCartridge:RequestSync">ZCartridge:RequestSync&nbsp;()</a></td>
+	<td class="summary">Request cartridge synchronization (store runtime data to file).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#ZCartridge:GetAllOfType">ZCartridge:GetAllOfType&nbsp;(t)</a></td>
+	<td class="summary">Request all Z* objects by type</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.ZCartridge._update">Wherigo.ZCartridge._update&nbsp;(position, t, accuracy)</a></td>
+	<td class="summary">Process position update.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#ZCartridge:made">ZCartridge:made&nbsp;(object)</a></td>
+	<td class="summary">Check membership of given object to class ZCartridge</td>
+	</tr>
+</tbody></table>
+<h2><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Class_Wherigo_ZMedia">Class Wherigo.ZMedia </a></h2>
+<table class="function_list">
+	<tbody><tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.ZMedia.metatable">Wherigo.ZMedia.metatable</a></td>
+	<td class="summary">Metatable for ZMedia objects.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.ZMedia.new">Wherigo.ZMedia.new&nbsp;(cartridge)</a></td>
+	<td class="summary">ZMedia constructor, extend ZObject.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#ZMedia:made">ZMedia:made&nbsp;(object)</a></td>
+	<td class="summary">Check membership of given object to class ZMedia</td>
+	</tr>
+</tbody></table>
+<h2><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Class_Wherigo_ZItem">Class Wherigo.ZItem </a></h2>
+<table class="function_list">
+	<tbody><tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.ZItem.metatable">Wherigo.ZItem.metatable</a></td>
+	<td class="summary">Metatable for ZItem objects.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.ZItem.new">Wherigo.ZItem.new&nbsp;(cartridge, container)</a></td>
+	<td class="summary">ZItem constructor, extend ZObject.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#ZItem:made">ZItem:made&nbsp;(object)</a></td>
+	<td class="summary">Check membership of given object to class ZItem</td>
+	</tr>
+</tbody></table>
+<h2><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Class_Wherigo_ZTask">Class Wherigo.ZTask </a></h2>
+<table class="function_list">
+	<tbody><tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.ZTask.metatable">Wherigo.ZTask.metatable</a></td>
+	<td class="summary">Metatable for ZTask objects.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.ZTask.new">Wherigo.ZTask.new&nbsp;(cartridge, container)</a></td>
+	<td class="summary">ZTask constructor, extend ZObject.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#ZTask:made">ZTask:made&nbsp;(object)</a></td>
+	<td class="summary">Check membership of given object to class ZTask</td>
+	</tr>
+</tbody></table>
+<h2><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Class_Wherigo_ZTimer">Class Wherigo.ZTimer </a></h2>
+<table class="function_list">
+	<tbody><tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.ZTimer.metatable">Wherigo.ZTimer.metatable</a></td>
+	<td class="summary">Metatable for ZTask objects.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.ZTimer.new">Wherigo.ZTimer.new&nbsp;(cartridge)</a></td>
+	<td class="summary">ZTimer constructor, extend ZObject.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#ZTimer:Start">ZTimer:Start&nbsp;()</a></td>
+	<td class="summary">Starts timer (countdown) and execute attached event</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#ZTimer:Stop">ZTimer:Stop&nbsp;()</a></td>
+	<td class="summary">Stops this timer and execute attached event</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#ZTimer:Tick">ZTimer:Tick&nbsp;()</a></td>
+	<td class="summary">Timer expired.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#ZTimer:made">ZTimer:made&nbsp;(object)</a></td>
+	<td class="summary">Check membership of given object to class ZTimer</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.ZTimer._Tick">Wherigo.ZTimer._Tick&nbsp;(id)</a></td>
+	<td class="summary">Internaly used function to call from C API.</td>
+	</tr>
+</tbody></table>
+<h2><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Class_Wherigo_ZInput">Class Wherigo.ZInput </a></h2>
+<table class="function_list">
+	<tbody><tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.ZInput.metatable">Wherigo.ZInput.metatable</a></td>
+	<td class="summary">Metatable for ZInput objects.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.ZInput.new">Wherigo.ZInput.new&nbsp;(cartridge)</a></td>
+	<td class="summary">Zinput constructor, extend ZObject.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#ZInput:made">ZInput:made&nbsp;(object)</a></td>
+	<td class="summary">Check membership of given object to class ZInput</td>
+	</tr>
+</tbody></table>
+<h2><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Class_Wherigo_ZCharacter">Class Wherigo.ZCharacter </a></h2>
+<table class="function_list">
+	<tbody><tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.ZCharacter.metatable">Wherigo.ZCharacter.metatable</a></td>
+	<td class="summary">Metatable for ZCharacter objects.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.ZCharacter.new">Wherigo.ZCharacter.new&nbsp;(cartridge, container)</a></td>
+	<td class="summary">ZCharacter constructor, extend ZObject.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#ZCharacter:made">ZCharacter:made&nbsp;(object)</a></td>
+	<td class="summary">Check membership of given object to class ZCharacter</td>
+	</tr>
+</tbody></table>
+<h2><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Class_Wherigo_Player">Class Wherigo.Player </a></h2>
+<table class="function_list">
+	<tbody><tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Player:RefreshLocation">Player:RefreshLocation&nbsp;()</a></td>
+	<td class="summary">Request new position update for special application.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="http://jakuje.dta3.com/webwig/luadoc/index.html#Wherigo.Player._removeFromZone">Wherigo.Player._removeFromZone&nbsp;(zone)</a></td>
+	<td class="summary">Remove zone from InsideOfZones table of Player.</td>
+	</tr>
+</tbody></table>
+
+<br>
+<br>
+
+
+    <h2><a name="Functions"></a>Functions</h2>
+    <dl class="function">
+    <dt>
+    <a name="MessageBox"></a>
+    <strong>MessageBox&nbsp;(t)</strong>
+    </dt>
+    <dd>
+    Show message to user
+   accepts table param or multiple parameters as below.
+   Params table: <ul>
+   <li> Text 		string message to show (required)
+   </li><li> Media		ZMedia image to show with it
+   </li><li> Buttons		Table with text to show on buttons
+   </li><li> Callback	Function to call after user pushes on of the buttons
+   </li></ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">t</span>
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="_MessageBoxResponse"></a>
+    <strong>_MessageBoxResponse&nbsp;(action)</strong>
+    </dt>
+    <dd>
+    Receives users response and calls desired callback.  Called only if
+   callback was set. Internal usage only!
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">action</span>
+        	Button1 or Button2 or nil depending on user choice</li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="Dialog"></a>
+    <strong>Dialog&nbsp;(t)</strong>
+    </dt>
+    <dd>
+    Shows series of messages to user, one after another.  Internal using
+   MessageBox. For more details @see MessageBox
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">t</span>
+        	Table of tables with keys "Text" and "Media" to be shown</li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="PlayAudio"></a>
+    <strong>PlayAudio&nbsp;(Media)</strong>
+    </dt>
+    <dd>
+    Request to play user some audio.  Sends request to user interface what
+   handles it. If it is long, can be stopped by calling Command("StopSound")
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">Media</span>
+        	ZMedia object containing audio to play</li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="ShowStatusText"></a>
+    <strong>ShowStatusText&nbsp;(Text)</strong>
+    </dt>
+    <dd>
+    Shows status text somewhere.  Not used and not well documented
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">Text</span>
+        	What should be shown to user</li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="VectorToZone"></a>
+    <strong>VectorToZone&nbsp;(point, zone)</strong>
+    </dt>
+    <dd>
+    Calculates distance from given point to nearest point of given zone
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">point</span>
+        	ZonePoint object as a starting location</li>
+        <li><span class="parameter">zone</span>
+        	Zone object as a destination</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+        <li>
+        Distance (object) to nearest point of zone</li>
+        <li>
+        Bearing (object) to nearest point of zone</li>
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="VectorToSegment"></a>
+    <strong>VectorToSegment&nbsp;(point, p1, p2)</strong>
+    </dt>
+    <dd>
+    Calculates distance from given point to nearest point on segment of zone
+   defined by two points (p1, p2)
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">point</span>
+        	ZonePoint object as a starting location</li>
+        <li><span class="parameter">p1</span>
+        		ZonePoint, first point of segment</li>
+        <li><span class="parameter">p2</span>
+        		ZonePoint, second point of segment</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+        <li>
+        Distance (object) to nearest point of segment</li>
+        <li>
+        Bearing (object) to nearest point of segment</li>
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="Inject"></a>
+    <strong>Inject&nbsp;()</strong>
+    </dt>
+    <dd>
+    Unknown purpose
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="IsPointInZone"></a>
+    <strong>IsPointInZone&nbsp;(point, zone)</strong>
+    </dt>
+    <dd>
+    Determines whether is given point in given zone using Minimal Bounding
+   Box algorithm and then with Cross Count algorithm
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">point</span>
+        	ZonePoint object</li>
+        <li><span class="parameter">zone</span>
+        	Zone object</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        True if is point in zone
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="TranslatePoint"></a>
+    <strong>TranslatePoint&nbsp;(point, distance, bearing)</strong>
+    </dt>
+    <dd>
+    Calculate new position of point, which is translated by given distance
+   and with given bearing
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">point</span>
+        		ZonePoint object as a starting point</li>
+        <li><span class="parameter">distance</span>
+        	Distance object</li>
+        <li><span class="parameter">bearing</span>
+        		Bearing object or number to determine direction</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        ZonePoint object with new location
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="VectorToPoint"></a>
+    <strong>VectorToPoint&nbsp;(p1, p2)</strong>
+    </dt>
+    <dd>
+    Calculate distance and bearing from one point to another
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">p1</span>
+        	Starting ZonePoint</li>
+        <li><span class="parameter">p2</span>
+        	Destination ZonePoint</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+        <li>
+        Distance object</li>
+        <li>
+        Bearing object</li>
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="NoCaseEquals"></a>
+    <strong>NoCaseEquals&nbsp;(f, s)</strong>
+    </dt>
+    <dd>
+    Compare two strings ignoring case
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">f</span>
+        	First string</li>
+        <li><span class="parameter">s</span>
+        	Second string</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        True if they equals
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="Command"></a>
+    <strong>Command&nbsp;(text)</strong>
+    </dt>
+    <dd>
+    Sends some command to engine<br>
+    Possible values:
+    <ul>
+		<li>SaveClose	- Saves cartridges and prompt user to quit
+		</li><li>DriveTo		- This should start Turn-by-turn navigation, but it is not used
+		</li><li>StopSound	- Stops playing sound in user interface
+		</li><li>Alert		- Beep.  Used on Garmins, which can't play sound
+    </li></ul>
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">text</span>
+        	Command</li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="LogMessage"></a>
+    <strong>LogMessage&nbsp;(Text, Level)</strong>
+    </dt>
+    <dd>
+    Write message into logfile for opened cartridge
+   params can be table
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">Text</span>
+        	Message to log</li>
+        <li><span class="parameter">Level</span>
+        	Level of message</li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="GetInput"></a>
+    <strong>GetInput&nbsp;(input)</strong>
+    </dt>
+    <dd>
+    Request user to fill in input.  Appearance depends on ZInput object
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">input</span>
+        	ZInput object containing data about input appearance</li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="_GetInputResponse"></a>
+    <strong>_GetInputResponse&nbsp;(response)</strong>
+    </dt>
+    <dd>
+    Callback of GetInput.  Internal usage only!
+   This is called for every GetInput
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">response</span>
+        	User's response (selected button or written string)</li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="ShowScreen"></a>
+    <strong>ShowScreen&nbsp;(screen, item)</strong>
+    </dt>
+    <dd>
+    Sends request to user interface to show screen
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">screen</span>
+        	Screen name (see constants)</li>
+        <li><span class="parameter">item</span>
+        	For 'DETAILSCREEN' particular ZObject</li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="__tonumber"></a>
+    <strong>__tonumber&nbsp;(arg)</strong>
+    </dt>
+    <dd>
+    Conversion function from Distance or Bearing object to number
+   used in metamethods to arithmetic and comparisons
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">arg</span>
+        		Number or object to convert</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Number representing Distance in meters or bearing in degrees
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="_callback"></a>
+    <strong>_callback&nbsp;(event, id)</strong>
+    </dt>
+    <dd>
+    Execute user command or click event on UI item.  OnClick is simply executed,
+   other events On* of commands must be handled with care of command type.
+   Internal use only.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">event</span>
+        	Event name in Commands table, or Click for OnClick event</li>
+        <li><span class="parameter">id</span>
+        		Global id in AllZObjects table</li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="_getMediaField"></a>
+    <strong>_getMediaField&nbsp;(field, t)</strong>
+    </dt>
+    <dd>
+    Get field with media path in JSON notation for UI.  Internal usa only.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">field</span>
+        	String "media" or "icon" used as index in JSON</li>
+        <li><span class="parameter">t</span>
+        		Table value to chech and add it exists</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        String containing JSON notation of field or empty string if <i>t</i> is nil
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="_addCommands"></a>
+    <strong>_addCommands&nbsp;(item)</strong>
+    </dt>
+    <dd>
+    Get Commands field with array of enabled commands for current object in JSON notation.
+   Internal use only!
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">item</span>
+        	ZObject to get commands for</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        String containing JSON notation of commands field
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="_bool2str"></a>
+    <strong>_bool2str&nbsp;(b)</strong>
+    </dt>
+    <dd>
+    Convert boolean value to string for JSON notation.  Internal use only!
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">b</span>
+        	Boolean value</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        String value containing true or false
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="_toJSON"></a>
+    <strong>_toJSON&nbsp;(str)</strong>
+    </dt>
+    <dd>
+    Escape string to put in JSON structure.  Just proxy to ignore nil values.
+   Internal use only!
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">str</span>
+        	String to escape</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Escaped string
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="_getUI"></a>
+    <strong>_getUI&nbsp;()</strong>
+    </dt>
+    <dd>
+    Get JSON fields to send to UI, containing all 4 sections, without brackets around,
+   so C++ can add more fields.  Internal use only!
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        String containing JSON notation of UI data
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="_getLocations"></a>
+    <strong>_getLocations&nbsp;()</strong>
+    </dt>
+    <dd>
+    Get Locations data in JSON to be send to UI.  Internal use only!
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        String containing JSON
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="_getInventory"></a>
+    <strong>_getInventory&nbsp;()</strong>
+    </dt>
+    <dd>
+    Get Inventory data in JSON to be send to UI.  Internal use only!
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        String containing JSON
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="_getYouSee"></a>
+    <strong>_getYouSee&nbsp;()</strong>
+    </dt>
+    <dd>
+    Get YouSee data in JSON to be send to UI.  Internal use only!
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        String containing JSON
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="_getTasks"></a>
+    <strong>_getTasks&nbsp;()</strong>
+    </dt>
+    <dd>
+    Get Tasks data in JSON to be send to UI.  Internal use only!
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        String containing JSON
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2><a name="Tables"></a>Tables</h2>
+    <dl class="function">
+    <dt>
+    <a name="_Internal"></a>
+    <strong>_Internal</strong>
+    </dt>
+    <dd>
+    Virtual object to execute command with other item, same way as GetInput.
+   Internaly substitutes ZInput object.
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">Name</span>
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2><a name="Class_Wherigo_Bearing"></a>Class Wherigo.Bearing </h2>
+        Object representing a bearing in degrees.
+    <dl class="function">
+    <dt>
+    <a name="Wherigo.Bearing.metatable"></a>
+    <strong>Wherigo.Bearing.metatable</strong>
+    </dt>
+    <dd>
+    Metatable for Bearing objects.  Implements arithmetic, call and tostring
+   as required by cartridges
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">__tostring</span>
+        </li>
+        <li><span class="parameter">__call</span>
+        </li>
+        <li><span class="parameter">__add</span>
+        </li>
+        <li><span class="parameter">__sub</span>
+        </li>
+        <li><span class="parameter">__mul</span>
+        </li>
+        <li><span class="parameter">__div</span>
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="Wherigo.Bearing.new"></a>
+    <strong>Wherigo.Bearing.new&nbsp;(value)</strong>
+    </dt>
+    <dd>
+    Bearing object constructor.  Number is automatically normalized to interval
+   0 - 360 degrees
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">value</span>
+         Numeric value representing bearing in degrees</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Bearing instance
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2><a name="Class_Wherigo_Distance"></a>Class Wherigo.Distance </h2>
+        Object representing distance in meters.
+    <dl class="function">
+    <dt>
+    <a name="Wherigo.Distance.metatable"></a>
+    <strong>Wherigo.Distance.metatable</strong>
+    </dt>
+    <dd>
+    Metatable for Distance objects.  Implements arithmetic, comparison, call
+   and tostring as required by cartridges
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">__tostring</span>
+        </li>
+        <li><span class="parameter">__call</span>
+        </li>
+        <li><span class="parameter">__eq</span>
+        </li>
+        <li><span class="parameter">__lt</span>
+        </li>
+        <li><span class="parameter">__le</span>
+        </li>
+        <li><span class="parameter">__add</span>
+        </li>
+        <li><span class="parameter">__sub</span>
+        </li>
+        <li><span class="parameter">__mul</span>
+        </li>
+        <li><span class="parameter">__div</span>
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="Wherigo.Distance.new"></a>
+    <strong>Wherigo.Distance.new&nbsp;(value, units)</strong>
+    </dt>
+    <dd>
+    Distance object constructor.  Represent distance in meters
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">value</span>
+         Numeric value of distance (required)</li>
+        <li><span class="parameter">units</span>
+         String representation of units in which is value set for conversion, default "meters"</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Distance instance
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="Wherigo.Distance:GetValue"></a>
+    <strong>Wherigo.Distance:GetValue&nbsp;(units)</strong>
+    </dt>
+    <dd>
+    Conversion function to get distance in other units
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">units</span>
+         String representation of units in which you want the result, default "meters"</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Numeric representation of distance in required units
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2><a name="Class_Wherigo_ZCommand"></a>Class Wherigo.ZCommand </h2>
+        Object representing ZCommand of ZObject.
+    <dl class="function">
+    <dt>
+    <a name="Wherigo.ZCommand.metatable"></a>
+    <strong>Wherigo.ZCommand.metatable</strong>
+    </dt>
+    <dd>
+    Metatable for ZCommand objects.  Implements index, newindex to watch
+   Enabled property and tostring
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">__tostring</span>
+        </li>
+        <li><span class="parameter">__index</span>
+        </li>
+        <li><span class="parameter">__newindex</span>
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="Wherigo.ZCommand.new"></a>
+    <strong>Wherigo.ZCommand.new&nbsp;(table)</strong>
+    </dt>
+    <dd>
+    ZCommand object constructor.  Sets allowed combination of parameters
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">table</span>
+         Parameters of command to set</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        ZCommand object
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="ZCommand:made"></a>
+    <strong>ZCommand:made&nbsp;(object)</strong>
+    </dt>
+    <dd>
+    Check membership of given object to class ZCommand
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">object</span>
+         Some object</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        True if object is a member of class
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2><a name="Class_Wherigo_ZReciprocalCommand"></a>Class Wherigo.ZReciprocalCommand </h2>
+        ZReciprocalCommand object
+    <dl class="function">
+    <dt>
+    <a name="Wherigo.ZReciprocalCommand.metatable"></a>
+    <strong>Wherigo.ZReciprocalCommand.metatable</strong>
+    </dt>
+    <dd>
+    Metatable for ZReciprocalCommand objects.  Implements tostring
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">__tostring</span>
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="Wherigo.ZReciprocalCommand.new"></a>
+    <strong>Wherigo.ZReciprocalCommand.new&nbsp;(table)</strong>
+    </dt>
+    <dd>
+    ZReciprocalCommand object constructor.  Sets parameters from arguments.
+   Not used in runtime.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">table</span>
+         Parameters of command to set</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        ZReciprocalCommand object
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="ZReciprocalCommand:made"></a>
+    <strong>ZReciprocalCommand:made&nbsp;(object)</strong>
+    </dt>
+    <dd>
+    Check membership of given object to class ZReciprocalCommand
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">object</span>
+         Some object</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        True if object is a member of class
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2><a name="Class_Wherigo_ZObject"></a>Class Wherigo.ZObject </h2>
+        Base object for all next Z* objects.  Implements all common
+    <dl class="function">
+    <dt>
+    <a name="Wherigo.ZObject.metatable"></a>
+    <strong>Wherigo.ZObject.metatable</strong>
+    </dt>
+    <dd>
+    Metatable for ZObject objects.  Implements index and newindex to keep
+   a track of desired properties and to invoke desired actions
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">__index</span>
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="Wherigo.ZObject.new"></a>
+    <strong>Wherigo.ZObject.new&nbsp;(cartridge, container)</strong>
+    </dt>
+    <dd>
+    ZObject constructor.  Sets default values and parameters of all objects.
+   Also can accept table argument with all values to set
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">cartridge</span>
+         ZCartridge object of global cartridge</li>
+        <li><span class="parameter">container</span>
+         Default location of object. Can be moved later by calling Wherigo.ZObject.MoveTo function</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        ZObject
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="Wherigo.ZObject:Contains"></a>
+    <strong>Wherigo.ZObject:Contains&nbsp;(obj)</strong>
+    </dt>
+    <dd>
+    Check weather obj is contained in self container (recursive search)
+   Special handling for Player and detecting if is in zone.
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">obj</span>
+         Object to check</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        True if self contains obj
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="Wherigo.ZObject:MoveTo"></a>
+    <strong>Wherigo.ZObject:MoveTo&nbsp;(owner)</strong>
+    </dt>
+    <dd>
+    Move self object to another container or to nil
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">owner</span>
+         Destination container</li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="Wherigo.ZObject:_is_visible"></a>
+    <strong>Wherigo.ZObject:_is_visible&nbsp;()</strong>
+    </dt>
+    <dd>
+    Checks if self object is visible to player.  Internal use only!
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        True if is object visible
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="Wherigo.ZObject:_get_pos"></a>
+    <strong>Wherigo.ZObject:_get_pos&nbsp;()</strong>
+    </dt>
+    <dd>
+    Return position of object.  Recurs into Container property. Internal use only!
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        ZonePoint object or nil if is position of object undefined
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="ZObject:made"></a>
+    <strong>ZObject:made&nbsp;(object)</strong>
+    </dt>
+    <dd>
+    Check membership of given object to class ZObject
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">object</span>
+         Some object to test</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        True if object is a member of class
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2><a name="Class_Wherigo_ZonePoint"></a>Class Wherigo.ZonePoint </h2>
+        ZonePoint object representing geographical point on sphere
+    <dl class="function">
+    <dt>
+    <a name="Wherigo.ZonePoint.metatable"></a>
+    <strong>Wherigo.ZonePoint.metatable</strong>
+    </dt>
+    <dd>
+    Metatable for ZonePoint objects.  Implements tostring as required by cartridges
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">__tostring</span>
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="Wherigo.ZonePoint.new"></a>
+    <strong>Wherigo.ZonePoint.new&nbsp;(lat, lon, alt)</strong>
+    </dt>
+    <dd>
+    ZonePoint constructor.  Creates new ZonePoint object defined by geographical
+   coordinates and altitude.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">lat</span>
+        	Latitude</li>
+        <li><span class="parameter">lon</span>
+        	Longitude</li>
+        <li><span class="parameter">alt</span>
+        	Altitude</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        ZonePoint object
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="ZonePoint:made"></a>
+    <strong>ZonePoint:made&nbsp;(object)</strong>
+    </dt>
+    <dd>
+    Check membership of given object to class ZonePoint
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">object</span>
+         Some object to test</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        True if object is a member of class
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2><a name="Class_Wherigo_Zone"></a>Class Wherigo.Zone </h2>
+        Zone object extends ZObject.  Location, defined with 3 or more ZonePoint.
+    <dl class="function">
+    <dt>
+    <a name="Wherigo.Zone.metatable"></a>
+    <strong>Wherigo.Zone.metatable</strong>
+    </dt>
+    <dd>
+    Metatable for ZonePoint objects.  Implements tostring as required by
+   cartridges. Other metamethods are inherited from ZObject
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">__tostring</span>
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="Wherigo.Zone.new"></a>
+    <strong>Wherigo.Zone.new&nbsp;(cartridge)</strong>
+    </dt>
+    <dd>
+    Zone constructor, extend ZObject.  Creates new Zone object.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">cartridge</span>
+        	global cartridge object</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Zone object
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="Wherigo.Zone._calculateBoundingBox"></a>
+    <strong>Wherigo.Zone._calculateBoundingBox&nbsp;()</strong>
+    </dt>
+    <dd>
+    Computes minimum bounding rectangle of this zone.  Internal use only!
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="Zone:made"></a>
+    <strong>Zone:made&nbsp;(object)</strong>
+    </dt>
+    <dd>
+    Check membership of given object to class Zone
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">object</span>
+         Some object to test</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        True if object is a member of class
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="Wherigo.Zone._update"></a>
+    <strong>Wherigo.Zone._update&nbsp;(v)</strong>
+    </dt>
+    <dd>
+    Update zone state depending on location update.  Recalculate distance
+   and change state if required
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">v</span>
+        	Zone object</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        True if changed. Unused.
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2><a name="Class_Wherigo_ZCartridge"></a>Class Wherigo.ZCartridge </h2>
+        ZCartridge object extend ZObject.  Global cartridge object to store all
+   game data.
+    <dl class="function">
+    <dt>
+    <a name="Wherigo.ZCartridge.metatable"></a>
+    <strong>Wherigo.ZCartridge.metatable</strong>
+    </dt>
+    <dd>
+    Metatable for ZCartridge object.  Implements tostring as required by
+   cartridges. Other metamethods are inherited from ZObject
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">__tostring</span>
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="Wherigo.ZCartridge.new"></a>
+    <strong>Wherigo.ZCartridge.new&nbsp;()</strong>
+    </dt>
+    <dd>
+    ZCartridge constructor, extend ZObject.  Creates new ZCartridge object
+   and initializes all default values and structures for storing all game data
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        ZCartridge object
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="ZCartridge:RequestSync"></a>
+    <strong>ZCartridge:RequestSync&nbsp;()</strong>
+    </dt>
+    <dd>
+    Request cartridge synchronization (store runtime data to file).
+   Only accepts the request and waits for the end of lua call stack
+   and then stores data.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="ZCartridge:GetAllOfType"></a>
+    <strong>ZCartridge:GetAllOfType&nbsp;(t)</strong>
+    </dt>
+    <dd>
+    Request all Z* objects by type
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">t</span>
+         Requested type</li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="Wherigo.ZCartridge._update"></a>
+    <strong>Wherigo.ZCartridge._update&nbsp;(position, t, accuracy)</strong>
+    </dt>
+    <dd>
+    Process position update.  Internal use only!
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">position</span>
+        	ZonePoint object with player location</li>
+        <li><span class="parameter">t</span>
+        			Time to update timers</li>
+        <li><span class="parameter">accuracy</span>
+        	GPS position accuracy</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        If something changed, request GUI update
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="ZCartridge:made"></a>
+    <strong>ZCartridge:made&nbsp;(object)</strong>
+    </dt>
+    <dd>
+    Check membership of given object to class ZCartridge
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">object</span>
+         Some object to test</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        True if object is a member of class
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2><a name="Class_Wherigo_ZMedia"></a>Class Wherigo.ZMedia </h2>
+        ZMedia object extend ZObject.  Media object with defined resources.
+    <dl class="function">
+    <dt>
+    <a name="Wherigo.ZMedia.metatable"></a>
+    <strong>Wherigo.ZMedia.metatable</strong>
+    </dt>
+    <dd>
+    Metatable for ZMedia objects.  Implements tostring as required by
+   cartridges. Other metamethods are inherited from ZObject
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">__tostring</span>
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="Wherigo.ZMedia.new"></a>
+    <strong>Wherigo.ZMedia.new&nbsp;(cartridge)</strong>
+    </dt>
+    <dd>
+    ZMedia constructor, extend ZObject.  Creates new ZMedia object
+   and initializes default values. Parameters can be in table.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">cartridge</span>
+         ZCartridge object of global cartridge</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        ZMedia object
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="ZMedia:made"></a>
+    <strong>ZMedia:made&nbsp;(object)</strong>
+    </dt>
+    <dd>
+    Check membership of given object to class ZMedia
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">object</span>
+         Some object to test</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        True if object is a member of class
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2><a name="Class_Wherigo_ZItem"></a>Class Wherigo.ZItem </h2>
+        ZItem object extend ZObject.  Item that can be seen or that can be in
+   inventory. This can have also some ZCommands.
+    <dl class="function">
+    <dt>
+    <a name="Wherigo.ZItem.metatable"></a>
+    <strong>Wherigo.ZItem.metatable</strong>
+    </dt>
+    <dd>
+    Metatable for ZItem objects.  Implements tostring as required by
+   cartridges. Other metamethods are inherited from ZObject
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">__tostring</span>
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="Wherigo.ZItem.new"></a>
+    <strong>Wherigo.ZItem.new&nbsp;(cartridge, container)</strong>
+    </dt>
+    <dd>
+    ZItem constructor, extend ZObject.  Creates new ZItem object
+   and initializes default values. Parameters can be in table.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">cartridge</span>
+         ZCartridge object of global cartridge</li>
+        <li><span class="parameter">container</span>
+         Default container tu put</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        ZItem object
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="ZItem:made"></a>
+    <strong>ZItem:made&nbsp;(object)</strong>
+    </dt>
+    <dd>
+    Check membership of given object to class ZItem
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">object</span>
+         Some object to test</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        True if object is a member of class
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2><a name="Class_Wherigo_ZTask"></a>Class Wherigo.ZTask </h2>
+        ZTask object extends ZObject.  Tasks given to player. Showing or hiding,
+   but keeps user in track what to do.
+    <dl class="function">
+    <dt>
+    <a name="Wherigo.ZTask.metatable"></a>
+    <strong>Wherigo.ZTask.metatable</strong>
+    </dt>
+    <dd>
+    Metatable for ZTask objects.  Implements tostring as required by
+   cartridges. Other metamethods are inherited from ZObject
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">__tostring</span>
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="Wherigo.ZTask.new"></a>
+    <strong>Wherigo.ZTask.new&nbsp;(cartridge, container)</strong>
+    </dt>
+    <dd>
+    ZTask constructor, extend ZObject.  Creates new ZTask object
+   and initializes default values. Parameters can be in table.
+   Also keeps track of all tasks to set default SortOrder.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">cartridge</span>
+         ZCartridge object of global cartridge</li>
+        <li><span class="parameter">container</span>
+         Default location of object. Can be moved later by calling Wherigo.ZObject.MoveTo function</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        ZTask object
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="ZTask:made"></a>
+    <strong>ZTask:made&nbsp;(object)</strong>
+    </dt>
+    <dd>
+    Check membership of given object to class ZTask
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">object</span>
+         Some object to test</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        True if object is a member of class
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2><a name="Class_Wherigo_ZTimer"></a>Class Wherigo.ZTimer </h2>
+        ZTimer object extends ZObject.  Can invoke action in some time.
+    <dl class="function">
+    <dt>
+    <a name="Wherigo.ZTimer.metatable"></a>
+    <strong>Wherigo.ZTimer.metatable</strong>
+    </dt>
+    <dd>
+    Metatable for ZTask objects.  Implements tostring as required by
+   cartridges. Other metamethods are inherited from ZObject
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">__tostring</span>
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="Wherigo.ZTimer.new"></a>
+    <strong>Wherigo.ZTimer.new&nbsp;(cartridge)</strong>
+    </dt>
+    <dd>
+    ZTimer constructor, extend ZObject.  Creates new ZTimer object
+   and initializes default values. Parameters can be in table.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">cartridge</span>
+         ZCartridge object of global cartridge</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        ZTimer object
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="ZTimer:Start"></a>
+    <strong>ZTimer:Start&nbsp;()</strong>
+    </dt>
+    <dd>
+    Starts timer (countdown) and execute attached event
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="ZTimer:Stop"></a>
+    <strong>ZTimer:Stop&nbsp;()</strong>
+    </dt>
+    <dd>
+    Stops this timer and execute attached event
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="ZTimer:Tick"></a>
+    <strong>ZTimer:Tick&nbsp;()</strong>
+    </dt>
+    <dd>
+    Timer expired.  Desired action is executed and timer reset.
+   if type is interval, then it starts again
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="ZTimer:made"></a>
+    <strong>ZTimer:made&nbsp;(object)</strong>
+    </dt>
+    <dd>
+    Check membership of given object to class ZTimer
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">object</span>
+         Some object to test</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        True if object is a member of class
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="Wherigo.ZTimer._Tick"></a>
+    <strong>Wherigo.ZTimer._Tick&nbsp;(id)</strong>
+    </dt>
+    <dd>
+    Internaly used function to call from C API.
+   Calls desired Tick event by given id in AllZObjects table
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">id</span>
+        	ID from AllZobjects table</li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2><a name="Class_Wherigo_ZInput"></a>Class Wherigo.ZInput </h2>
+        ZInput object extends ZObject.  Request input from user. Can be text or
+   multiple choice
+    <dl class="function">
+    <dt>
+    <a name="Wherigo.ZInput.metatable"></a>
+    <strong>Wherigo.ZInput.metatable</strong>
+    </dt>
+    <dd>
+    Metatable for ZInput objects.  Implements tostring as required by
+   cartridges. Other metamethods are inherited from ZObject
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">__tostring</span>
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="Wherigo.ZInput.new"></a>
+    <strong>Wherigo.ZInput.new&nbsp;(cartridge)</strong>
+    </dt>
+    <dd>
+    Zinput constructor, extend ZObject.  Creates new Zinput object
+   and initializes default values. Parameters can be in table.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">cartridge</span>
+         ZCartridge object of global cartridge</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        ZTimer object
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="ZInput:made"></a>
+    <strong>ZInput:made&nbsp;(object)</strong>
+    </dt>
+    <dd>
+    Check membership of given object to class ZInput
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">object</span>
+         Some object to test</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        True if object is a member of class
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2><a name="Class_Wherigo_ZCharacter"></a>Class Wherigo.ZCharacter </h2>
+        ZCharacter object extends ZObject.  Player or other character to be seen in
+   inventory or in nearby zones.
+    <dl class="function">
+    <dt>
+    <a name="Wherigo.ZCharacter.metatable"></a>
+    <strong>Wherigo.ZCharacter.metatable</strong>
+    </dt>
+    <dd>
+    Metatable for ZCharacter objects.  Implements tostring as required by
+   cartridges. Other metamethods are inherited from ZObject
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">__tostring</span>
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="Wherigo.ZCharacter.new"></a>
+    <strong>Wherigo.ZCharacter.new&nbsp;(cartridge, container)</strong>
+    </dt>
+    <dd>
+    ZCharacter constructor, extend ZObject.  Creates new ZCharacter object
+   and initializes default values. Parameters can be in table.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">cartridge</span>
+         ZCartridge object of global cartridge</li>
+        <li><span class="parameter">container</span>
+         Default container for character</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        ZCharacter object
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="ZCharacter:made"></a>
+    <strong>ZCharacter:made&nbsp;(object)</strong>
+    </dt>
+    <dd>
+    Check membership of given object to class ZCharacter
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">object</span>
+         Some object to test</li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        True if object is a member of class
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2><a name="Class_Wherigo_Player"></a>Class Wherigo.Player </h2>
+        Global object representing player as ZCharacter with position.
+
+    <dl class="function">
+    <dt>
+    <a name="Player:RefreshLocation"></a>
+    <strong>Player:RefreshLocation&nbsp;()</strong>
+    </dt>
+    <dd>
+    Request new position update for special application.  Required by some
+   cartridges. There is not implemented since I can't see point in it.
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="Wherigo.Player._removeFromZone"></a>
+    <strong>Wherigo.Player._removeFromZone&nbsp;(zone)</strong>
+    </dt>
+    <dd>
+    Remove zone from InsideOfZones table of Player.  Required for runtime
+   for some cartridges and used for savegame. Internal use only!
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">zone</span>
+         Zone object to remove</li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.3.11</a></i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+
+
+<style>#content > #center > .dose > .dosesingle,#content > #right > .dose > .dosesingle
+{display:none !important;}</style></body></html>
